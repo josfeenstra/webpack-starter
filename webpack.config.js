@@ -1,6 +1,5 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
-const PATH_TO_GEON = "../engine";
 
 // setup webpack using the ts-loader
 module.exports = (env) => {
@@ -31,14 +30,17 @@ module.exports = (env) => {
                     terserOptions: {
                         keep_fnames: true,
                     },
-              }),
+                }),
             ],
         },
-    }
+        resolve: {
+            extensions: [".ts", ".js"],
+        },
+    };
 
     if (env.eval === "dev") {
         pack.devtool = "eval-source-map";
     }
 
     return pack;
-}
+};
