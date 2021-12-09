@@ -1,0 +1,29 @@
+{
+    // dont forget to turn on the prettier extension...
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+
+    "files.exclude": {
+        // generalities
+        // "**/LICENSE": true,
+        // "**/README.md": true,
+        // "**/package.json": true,
+        
+        // config files
+        // "**/Dockerfile": true,
+        // "**/.prettierrc.js": true,
+        // "**/tsconfig.json": true,
+        // "**/webpack.config.js": true,
+        
+        // .ignore files
+        // "**/.prettierignore": true,
+        // "**/.gitignore": true,
+        // "**/.docketignore": true,
+        // "**/.npmignore": true,
+        
+        // generated files
+        // "**/tsconfig.tsbuildinfo": true,
+        // "**/yarn.lock": true,
+        // "**/package-lock.json": true
+    }
+}

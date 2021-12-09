@@ -1,0 +1,15 @@
+/* Visit https://aka.ms/tsconfig.json to read more about this file */
+{
+  "compilerOptions": {        
+    "target": "es6",   
+    "sourceMap": false, 
+    "strict": true,                          
+    "moduleResolution": "node",          
+    "esModuleInterop": true,                 
+    "skipLibCheck": true,                     
+    "forceConsistentCasingInFileNames": false,  
+    
+    /* This is so we can quickly travel to the dependencies */
+    "baseUrl": ".",
+  },
+}
